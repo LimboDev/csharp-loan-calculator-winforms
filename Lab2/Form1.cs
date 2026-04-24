@@ -89,8 +89,7 @@ namespace Lab2
             }
             else if (aprobado == 2 && cuota > 0)
             {
-                lbEvaluado.Text = "Su préstamo fue aprobado \n" +
-                    "a medias, necesita aval.";
+                lbEvaluado.Text = "Su préstamo fue aprobado a medias, necesita aval.";
             }
             else if (aprobado == 3 && cuota > 0)
             {
@@ -139,6 +138,19 @@ namespace Lab2
         private void cbPlazo_SelectedIndexChanged(object sender, EventArgs e)
         {
             VerificarCampos();
+        }
+
+        private void btLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            tbNombre.Text = "";
+            tbID.Text = "";
+            tbSalario.Text = "";
+            tbPrestamo.Text = "";
+            cbPlazo.SelectedIndex = -1;
+            lbCuota.Text = "";
+            lbDatos.Text = "";
+            lbEvaluado.Text = "";
+            lbPorcentaje.Text = "";
         }
     }
 }

@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btLimpiarCampos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Controls.Add(this.btLimpiarCampos);
             this.groupBox1.Controls.Add(this.lbPorcentaje);
             this.groupBox1.Controls.Add(this.lbCuota);
             this.groupBox1.Controls.Add(this.lbEvaluado);
@@ -155,6 +157,7 @@
             // tbPrestamo
             // 
             this.tbPrestamo.Location = new System.Drawing.Point(305, 156);
+            this.tbPrestamo.MaxLength = 10;
             this.tbPrestamo.Name = "tbPrestamo";
             this.tbPrestamo.Size = new System.Drawing.Size(188, 26);
             this.tbPrestamo.TabIndex = 0;
@@ -163,6 +166,7 @@
             // tbSalario
             // 
             this.tbSalario.Location = new System.Drawing.Point(305, 118);
+            this.tbSalario.MaxLength = 10;
             this.tbSalario.Name = "tbSalario";
             this.tbSalario.Size = new System.Drawing.Size(188, 26);
             this.tbSalario.TabIndex = 6;
@@ -171,6 +175,7 @@
             // tbID
             // 
             this.tbID.Location = new System.Drawing.Point(305, 78);
+            this.tbID.MaxLength = 20;
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(188, 26);
             this.tbID.TabIndex = 5;
@@ -180,6 +185,7 @@
             // 
             this.tbNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNombre.Location = new System.Drawing.Point(305, 39);
+            this.tbNombre.MaxLength = 40;
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(188, 26);
             this.tbNombre.TabIndex = 4;
@@ -221,6 +227,17 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Ingrese su nombre completo:";
             // 
+            // btLimpiarCampos
+            // 
+            this.btLimpiarCampos.BackColor = System.Drawing.SystemColors.Menu;
+            this.btLimpiarCampos.Location = new System.Drawing.Point(152, 263);
+            this.btLimpiarCampos.Name = "btLimpiarCampos";
+            this.btLimpiarCampos.Size = new System.Drawing.Size(169, 32);
+            this.btLimpiarCampos.TabIndex = 14;
+            this.btLimpiarCampos.Text = "Limpiar Campos";
+            this.btLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btLimpiarCampos.Click += new System.EventHandler(this.btLimpiarCampos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -256,6 +273,7 @@
         private System.Windows.Forms.Label lbPorcentaje;
         private System.Windows.Forms.Label lbCuota;
         private System.Windows.Forms.Label lbEvaluado;
+        private System.Windows.Forms.Button btLimpiarCampos;
     }
 }
 
