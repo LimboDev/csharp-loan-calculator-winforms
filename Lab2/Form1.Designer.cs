@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btLimpiarCampos = new System.Windows.Forms.Button();
             this.lbPorcentaje = new System.Windows.Forms.Label();
             this.lbCuota = new System.Windows.Forms.Label();
             this.lbEvaluado = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btLimpiarCampos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +86,17 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Solicitante";
+            // 
+            // btLimpiarCampos
+            // 
+            this.btLimpiarCampos.BackColor = System.Drawing.SystemColors.Menu;
+            this.btLimpiarCampos.Location = new System.Drawing.Point(152, 263);
+            this.btLimpiarCampos.Name = "btLimpiarCampos";
+            this.btLimpiarCampos.Size = new System.Drawing.Size(169, 32);
+            this.btLimpiarCampos.TabIndex = 14;
+            this.btLimpiarCampos.Text = "Limpiar Campos";
+            this.btLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btLimpiarCampos.Click += new System.EventHandler(this.btLimpiarCampos_Click);
             // 
             // lbPorcentaje
             // 
@@ -227,17 +238,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Ingrese su nombre completo:";
             // 
-            // btLimpiarCampos
-            // 
-            this.btLimpiarCampos.BackColor = System.Drawing.SystemColors.Menu;
-            this.btLimpiarCampos.Location = new System.Drawing.Point(152, 263);
-            this.btLimpiarCampos.Name = "btLimpiarCampos";
-            this.btLimpiarCampos.Size = new System.Drawing.Size(169, 32);
-            this.btLimpiarCampos.TabIndex = 14;
-            this.btLimpiarCampos.Text = "Limpiar Campos";
-            this.btLimpiarCampos.UseVisualStyleBackColor = false;
-            this.btLimpiarCampos.Click += new System.EventHandler(this.btLimpiarCampos_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -246,7 +246,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Gianni Cavalieri 8-1067-1597";
+            this.Text = "Evaluación de Préstamos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
